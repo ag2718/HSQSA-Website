@@ -1,0 +1,88 @@
+body {
+    font-family: 'Noto Sans JP', serif;
+    background-color: #0B0D0F;
+    color: white;
+    height: 200vh;
+} nav {
+    background-color: #0B0D0F;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: #FF9F31;
+}
+
+hr {
+    background-color: white;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.header {
+    height: 80vh;
+    text-shadow: 1px 1px black;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,1)), url('img/QC.jpg');
+}
+
+.highlight {
+    color: #FF7F11;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    border: 1px solid white;
+    background-color: #0B0D0F;
+    color: white;
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 66rem) {
+    #team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 44rem) {
+    #team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 20rem) {
+    .card {
+        width: 15rem;
+    }
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: 60%;
+    margin: 10%;
+    border: 1px solid white;
+}
