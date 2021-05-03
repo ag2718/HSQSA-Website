@@ -29,7 +29,7 @@ hr {
 }
 
 .highlight {
-    color: #FF7F11;
+    color: #FFAF44;
 }
 
 .center {
@@ -39,7 +39,7 @@ hr {
     flex-direction: column;
 }
 
-#team-grid {
+.team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
