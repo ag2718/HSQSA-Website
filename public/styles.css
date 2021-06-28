@@ -23,6 +23,11 @@ hr {
     margin-right: 5rem;
 }
 
+.wide {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
 .header {
     height: 80vh;
     text-shadow: 1px 1px black;
