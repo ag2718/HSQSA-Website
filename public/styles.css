@@ -75,16 +75,16 @@ hr {
 }
 
 .card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .card:hover .card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .card-front {
@@ -96,11 +96,13 @@ hr {
 }
 
 .card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .card-back {
@@ -108,9 +110,9 @@ hr {
     padding-left: 3rem;
     padding-right: 3rem;
     display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     font-size: 0.9rem;
 }
 
