@@ -1,17 +1,23 @@
+:root {
+  --bg-color: #0B0D0F;
+  --orange: #FF945E;
+}
+
 body {
     font-family: 'Noto Sans JP', serif;
-    background-color: #0B0D0F;
+    background-color: var(--bg-color);
     color: white;
-    height: 200vh;
-} nav {
-    background-color: #0B0D0F;
+} 
+
+nav {
+    background-color: var(--bg-color);
 }
 
 a {
-    color: white;
+    color: #FFBE9E;
 }
 a:hover {
-    color: #FF9F31;
+    color: #FEAA7E;
     text-decoration: none;
 }
 
@@ -35,7 +41,7 @@ hr {
 }
 
 .highlight {
-    color: #FFAF44;
+    color: var(--orange);
 }
 
 .center {
@@ -45,15 +51,50 @@ hr {
     flex-direction: column;
 }
 
-#resources-div {
+.list-div {
     margin: 5rem;
     margin-left: 10rem;
 }
 
 @media screen and (max-width: 45rem) {
-    #resources-div {
+    .list-div {
         margin: 5rem;
     }
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+button {
+
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: var(--bg-color);
+    color: white;
+
+    border: solid 1px var(--orange);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button h2 {
+    color: var(--orange);
+}
+
+button:hover {
+    box-shadow: 1px 1px var(--orange);
+}
+
+#flyer {
+    width: 75vw;
 }
 
 .team-grid {
@@ -81,6 +122,7 @@ hr {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
 }
 
 .card:hover .card-inner {
