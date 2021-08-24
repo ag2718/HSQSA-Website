@@ -94,7 +94,7 @@ button:hover {
 }
 
 #flyer {
-    width: 75vw;
+    width: min(75vw, 750px);
 }
 
 .team-grid {
